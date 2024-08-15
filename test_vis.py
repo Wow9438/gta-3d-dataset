@@ -32,8 +32,7 @@ cloud = cloud[np.all([-100,-100,-70] < cloud, axis=1), :]
 
 c_pos_marker.set_data(pos=cloud, symbol='o', size=0.01,
                       edge_width=0, edge_width_rel=None,
-                      edge_color='black', face_color='black',
-                      scaling=False)
+                      edge_color='black', face_color='black')
 
 view.camera = scene.FlyCamera(fov=data.c_fov)
 view.camera.auto_roll = False
