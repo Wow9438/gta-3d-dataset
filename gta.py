@@ -392,7 +392,7 @@ class GTAData:
 
         if self.depth_map is None:
             # depth 0, stencil 1
-            self.depth_map = skimage.io.imread(self.filename + '.tiff', series=1)[0]
+            self.depth_map = skimage.io.imread(self.filename + '.tiff', series=1)
 
         x = np.linspace(-1, 1, self.depth_map.shape[1])
         y = np.linspace(1, -1, self.depth_map.shape[0])
